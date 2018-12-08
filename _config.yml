@@ -1,0 +1,71 @@
+# Site settings
+name: Ching Ching
+title: CCL
+site.external-image: true
+selfie: assets/images/selfie.jpg
+email: contactme@chingchinglee.com
+description: >
+  A girl who loves Web, Cat, Gym, and Mexican food.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter: chingchinglcc
+github:  chingchinglcc
+instagram: ching2lcc
+
+paginate: 5
+paginate_path: "/page/:num"
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+
+source: ./app
+destination: ./build
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+
+
+# Contact settings
+# contact_img: /assets/images/placeholder-28.jpg
+# formcarry: https://formcarry.com/s/HkIo0nMb7
+
+# Navigation
+about: true
+projects: true
+
+docs:
+- title: CCL
+  url: /
+
+- title: Projects
+  url: /projects
+
+- title: About
+  url: /aboutme
+
+
+# Collections
+collections:
+  reviews:
+    output: true
+    permalink: /project/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: project
+    values:
+      layout: project
+
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - README.md
+

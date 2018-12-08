@@ -1,0 +1,21 @@
+$mobile-large: 400px;
+$tablet: 720px;
+$desktop: 992px;
+$desktop-medium: 1200px;
+$desktop-large: 1400px;
+$desktop-extra-large: 1792px;
+
+.wrapper {
+    width: $desktop;
+    margin: 0 auto;
+}
+
+.selfie-block {
+    text-align: center;
+}
+
+.selfie {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+}
