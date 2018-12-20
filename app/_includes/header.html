@@ -1,15 +1,11 @@
-{% if page.title == "Home"
-   or page.title == "Projects"
-%}{% assign showHeader = true %}{% endif %}
 
-{% if showHeader == true %}
     <header class="header-home wrapper">
         <div class="selfie-block">
-            <img class="selfie" alt="{{ site.name }}" src="{{ site.selfie }}" />
+            <img class="selfie" alt="{{ site.name }}" src="{{ '/assets/images/selfie.jpg' | prepend: site.baseurl }}" />
         </div>
         <h1 class="title">{{ site.title }}</h1>
         {% include nav.html %}
     </header>
-{% endif %}
+
 
 

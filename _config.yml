@@ -2,7 +2,6 @@
 name: Ching Ching
 title: CCL
 site.external-image: true
-selfie: assets/images/selfie.jpg
 email: contactme@chingchinglee.com
 description: >
   A girl who loves Web, Cat, Gym, and Mexican food.
@@ -43,8 +42,8 @@ docs:
 - title: Projects
   url: /projects
 
-- title: About
-  url: /aboutme
+- title: Contact
+  url: /contact
 
 
 # Collections
