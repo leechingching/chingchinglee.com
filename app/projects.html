@@ -1,0 +1,16 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="projects">
+    <div class="grid-lg">
+        <div class="project__container">
+            {% for project in site.projects %}
+                {% include grid-card.html %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+

@@ -49,9 +49,9 @@ docs:
 
 # Collections
 collections:
-  reviews:
+  projects:
     output: true
-    permalink: /project/:title/
+    permalink: /projects/:title/
 
 # Defaults
 defaults:
