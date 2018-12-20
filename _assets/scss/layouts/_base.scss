@@ -1,9 +1,14 @@
-$mobile-large: 400px;
-$tablet: 720px;
-$desktop: 992px;
-$desktop-medium: 1200px;
-$desktop-large: 1400px;
-$desktop-extra-large: 1792px;
+// General Site setting
+
+.site_container {
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100vh;
+
+    .page-content {
+        @include flex(1);
+    }
+}
 
 .wrapper {
     width: $desktop;
@@ -18,4 +23,55 @@ $desktop-extra-large: 1792px;
     width: 100%;
     max-width: 250px;
     border-radius: 50%;
+}
+
+// Header Nav
+
+nav ul.list {
+    list-style: none;
+    padding: 0;
+    @include flexbox();
+    @include justify-content(space-around);
+}
+
+// Footer Nav
+
+.footer-col-wrapper {
+    @include flexbox();
+    @include flex-direction(column);
+    .footer-col {
+        @include flexbox();
+
+        // .contact-list {
+        //     @include body_text($lato, normal, 14px, $grey);
+        //     color: $light-grey;
+        // }
+
+        .social-media-list {
+            @include flexbox();
+            @include justify-content(center);
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            li{
+                width: 3%;
+                margin: auto 1em;
+                
+
+                a svg {
+                    width: 100%;
+                    fill: $light-grey;
+                }
+            } 
+        }
+    }
+    .footer-col-2 {
+        @include justify-content(center);
+        text-align: center;
+        span a {
+            text-decoration: none;
+            @include body_text($lato, normal, 14px, $grey);
+         }
+        
+     }
 }

@@ -1,0 +1,29 @@
+@mixin body_text($font-family, $weight, $size, $color) {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin article_text {
+    @include body_text($lato,normal,19px,$grey);
+}
+
+@mixin post_title {
+    @include body_text($abril, normal, 30px, $grey);
+    letter-spacing: .3rem;
+    text-transform: capitalize;
+}
+
+@mixin h1 {
+    @include body_text($abril, normal, 10rem, $grey);
+    text-transform: capitalize; 
+    text-align: center;
+    letter-spacing: .3rem;
+    margin-bottom: 0;
+}
+
+@mixin h2 {
+    @include body_text($lato, 300, 22px, $light-grey);
+    text-align: center;
+}

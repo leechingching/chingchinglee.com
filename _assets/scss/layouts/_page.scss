@@ -1,0 +1,18 @@
+// Homepage
+
+.homepage {
+    .home_intro {
+        h1 {
+            @include h1();
+        }
+
+        h2{
+            @include h2();
+        }
+    }
+
+    p.bio {
+        @include body_text($lato, 300, 22px, $light-grey);
+        line-height: 32px;
+    }
+}

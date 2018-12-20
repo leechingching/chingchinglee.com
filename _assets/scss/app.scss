@@ -1,4 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,400,700');
+//----------------------------------------------
+// Variables
+//---------------------------------------------- 
+@import 'variables/_setting';
+@import 'variables/_breakpoint';
+@import 'variables/_typography';
+//----------------------------------------------
+// Tools
+//---------------------------------------------- 
+@import 'tools/_mixin';
+@import 'tools/_responsive';
 
 //----------------------------------------------
 // Fonts
@@ -10,22 +21,14 @@
 //---------------------------------------------- 
 @import 'layouts/_setting';
 @import 'layouts/_base';
-
+@import 'layouts/_page';
+@import 'layouts/_project';
 //----------------------------------------------
 // Modules
 //---------------------------------------------- 
 
-//----------------------------------------------
-// Tools
-//---------------------------------------------- 
-@import 'tools/_mixin';
-@import 'tools/_responsive';
 
-//----------------------------------------------
-// Variables
-//---------------------------------------------- 
-@import 'variables/_setting';
-@import 'variables/_breakpoint';
+
 
 //----------------------------------------------
 // Vender
