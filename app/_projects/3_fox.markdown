@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 type: "project"
 title: The Reintroduction of Swift Fox
 subtitle: CSS Animation and GreenSock Project

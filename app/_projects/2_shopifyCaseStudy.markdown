@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 type: "project"
 title: Adventure of Noodle
 subtitle: A Shopfiy Casestudy

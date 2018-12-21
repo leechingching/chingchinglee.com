@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 type: "project"
 title: FOOD GUIDE
 subtitle: Your Dinner Supervisior

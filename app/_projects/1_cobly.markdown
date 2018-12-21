@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 type: "project"
 title: Textbooks of Terrors
 subtitle: An educational app development and design.
