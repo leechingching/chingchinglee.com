@@ -15,4 +15,8 @@
         @include body_text($lato, 300, 22px, $light-grey);
         line-height: 32px;
     }
+
+    a {
+        padding: 0 0.5rem;
+    }
 }

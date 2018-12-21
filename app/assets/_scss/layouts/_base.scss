@@ -27,11 +27,31 @@
 
 // Header Nav
 
+a {
+    color: $grey;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-grey;
+    }
+
+    
+}
+
 nav ul.list {
-    list-style: none;
-    padding: 0;
     @include flexbox();
     @include justify-content(space-around);
+    list-style: none;
+    margin-top: 2em;
+    padding: 1rem 0;
+
+    li a {
+        @include body_text($abril, normal, 18px, $grey);
+
+        &:hover {
+            color: $hover-grey;
+        }
+    }
 }
 
 // Footer Nav
