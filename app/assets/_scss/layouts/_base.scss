@@ -1,5 +1,11 @@
 // General Site setting
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+}
 .site_container {
     @include flexbox();
     @include flex-direction(column);

@@ -1,6 +1,5 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,400,700');
+
 //----------------------------------------------
 // Variables
 //---------------------------------------------- 
@@ -21,13 +20,10 @@
 //----------------------------------------------
 // Layouts
 //---------------------------------------------- 
-@import 'layouts/_setting';
 @import 'layouts/_base';
+@import 'layouts/_collection';
 @import 'layouts/_page';
 @import 'layouts/_project';
-//----------------------------------------------
-// Modules
-//---------------------------------------------- 
 
 
 
