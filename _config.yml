@@ -25,7 +25,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-
+sass:
+    - sass_dir: _sass
+    - style: compressed
 
 # Contact settings
 # contact_img: /assets/images/placeholder-28.jpg
