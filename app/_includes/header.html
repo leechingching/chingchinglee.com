@@ -1,9 +1,16 @@
 
-    <header class="header-home wrapper">
-        <div class="selfie-block">
-            <img class="selfie" alt="{{ site.name }}" src="{{ '/assets/images/selfie.jpg' | prepend: site.baseurl }}" />
-        </div>
+    <header class="header-home headere-wrapper">
+        {% include hamburger.html %}
         {% include nav.html %}
+        <div class="landing_block">
+            {% if page.url == '/' %}
+                <img class="landing_image selfie" alt="{{ site.name }}" src="{{ '/assets/images/selfie.jpg' | prepend: site.baseurl }}" />
+                {% else if page.url =='projects' %}
+                <img class="landing_image project-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_project.jpg' | prepend: site.baseurl }}" />
+                {% else if page.url == 'contact' %}
+                <img class="landing_image contact-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_contact.jpg' | prepend: site.baseurl }}" />
+            {% endif %}
+        </div>
     </header>
 
 

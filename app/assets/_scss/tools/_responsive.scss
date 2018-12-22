@@ -7,6 +7,13 @@ $fix-mqs: false !default;
   }
 }
 
+@mixin if-max-width($width) {
+  // Otherwise, output it using a regular media query
+  @media (maxn-width: $width) {
+    @content;
+  }
+}
+
 @mixin respond-min($width) {
   @if $fix-mqs {
     @if $fix-mqs >= $width {

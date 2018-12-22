@@ -10,3 +10,13 @@ $light-grey: #707C80;
 $white: #fff;
 
 $hover-grey: rgba(160, 160, 160, .75);
+
+
+// Mobile 
+.mobile__display {
+    display: block;
+}
+
+.mobile__display--false {
+    display: none;
+}

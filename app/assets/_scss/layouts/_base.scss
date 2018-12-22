@@ -1,4 +1,5 @@
 // General Site setting
+// *********************
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -15,24 +16,33 @@ body {
         @include flex(1);
     }
 }
+// 
 
 .wrapper {
-    width: $desktop;
-    margin: 0 auto;
-}
+    max-width: $desktop;
+   // width: calc(100% - 2vw);
+    margin: 0 3em;
+    
 
-.selfie-block {
+    @include if-min-width($desktop) {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+.landing_block {
     text-align: center;
+    .landing_image {
+        width: 100%;
+        max-width: 1030px;
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
-.selfie {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 50%;
-}
+
 
 // Header Nav
-
+// *********************
 a {
     color: $grey;
     text-decoration: none;
@@ -44,35 +54,115 @@ a {
     
 }
 
+nav {
+    visibility: hidden;
+    @include if-min-width($desktop) {
+        visibility: visible;
+    }
+}
+
 nav ul.list {
     @include flexbox();
     @include justify-content(space-around);
     list-style: none;
-    margin-top: 2em;
+    margin: 2.3em auto;
     padding: 1rem 0;
 
-    li a {
-        @include body_text($abril, normal, 18px, $grey);
+    li {
+        &.active {
+            border: 1px solid $grey;
+            padding: .5em 10px;
+        }
 
-        &:hover {
-            color: $hover-grey;
+        a {
+            @include body_text($lato, normal, 18px, $grey);
+    
+            &:hover {
+                color: $hover-grey;
+            }
         }
     }
 }
 
+
+    // Hamburger Menu Icon
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 56px;
+        right: 30px;
+        display: inline-block;
+        cursor: pointer;
+
+        &::before, &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background: $grey;
+            width: 2.2rem;
+            height: 1px;
+        }
+
+        span:hover, &:hover::before, &:hover::after {
+            background: $light-grey;
+        }
+
+        span{
+            display: block;
+            width: 2.2rem;
+            height: 1px;
+            background: $grey;
+            margin: 0.5rem 0;
+            transition: .4s ease-in-out;
+            position: relative;
+
+
+        }
+        @include if-min-width($desktop) {
+            display: none;
+        }
+    } 
+
+    // Mobile Nav
+    .mobile-nav__full {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: $grey;
+        @include flexbox();
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: auto;
+
+            li {
+                margin: 2em auto;
+
+                a {
+                    @include body-text($abril, normal, 45px, $white);
+
+                    &:hover {
+                        color: $light-grey;
+                    }
+                }
+            }
+        }
+    }
+    
+
 // Footer Nav
+// *********************
 
 .footer-col-wrapper {
     @include flexbox();
     @include flex-direction(column);
     .footer-col {
         @include flexbox();
-
-        // .contact-list {
-        //     @include body_text($lato, normal, 14px, $grey);
-        //     color: $light-grey;
-        // }
-
         .social-media-list {
             @include flexbox();
             @include justify-content(center);
