@@ -54,6 +54,7 @@ a {
     
 }
 
+
 nav {
     visibility: hidden;
     @include if-min-width($desktop) {
@@ -61,28 +62,32 @@ nav {
     }
 }
 
-nav ul.list {
-    @include flexbox();
-    @include justify-content(space-around);
-    list-style: none;
-    margin: 2.3em auto;
-    padding: 1rem 0;
+    nav ul.list {
+        @include flexbox();
+        @include justify-content(space-between);
+        max-width: $desktop;
+        width: 100%;
+        list-style: none;
+        margin: 2.3em auto;
+        padding: 1rem 0;
 
-    li {
-        &.active {
-            border: 1px solid $grey;
-            padding: .5em 10px;
-        }
+        li {
 
-        a {
-            @include body_text($lato, normal, 18px, $grey);
-    
-            &:hover {
-                color: $hover-grey;
+            a {
+                @include body_text($lato, normal, 18px, $grey);
+                @include if-min-width($desktop-large) {
+                    @include body_text($lato, normal, 25px, $grey);
+                }
+                &:hover {
+                    color: $hover-grey;
+                }
+            }
+
+            &:first-child a {
+                font-weight: $fw--3;
             }
         }
     }
-}
 
 
     // Hamburger Menu Icon

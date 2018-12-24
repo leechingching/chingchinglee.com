@@ -7,7 +7,7 @@
 }
 
 @mixin article_text {
-    @include body_text($lato,normal,19px,$grey);
+    @include body_text($lato,normal,19px, $grey);
 }
 
 @mixin post_title {
@@ -16,13 +16,35 @@
     text-transform: capitalize;
 }
 
+@mixin paragraph_text($width, $respond, $font-size) {
+    @include body_text($lato, 300, 28px, $light-grey);
+
+    @if $respond == to-min {
+        @media screen and (min-width: $width) {
+            font-size: $font-size;
+        };
+
+    } @else if $respond == to-max {
+        @media (max-width: $width){
+            font-size: $font-size;
+        }
+    }
+
+    line-height: 40px;
+}
+
 @mixin h1 {
-    @include body_text($abril, normal, 10rem, $grey);
+    @include body_text($abril, normal, 6rem, $grey);
     text-transform: capitalize; 
     text-align: center;
     letter-spacing: .3rem;
     margin: 0 auto;
+
+    @include if-min-width($tablet) {
+        font-size: 10rem;
+    }
 }
+
 
 @mixin h2 {
     @include body_text($lato, 300, 22px, $light-grey);

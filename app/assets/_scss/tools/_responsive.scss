@@ -1,5 +1,5 @@
-$fix-mqs: false !default;
-
+// Simple min width Mxinin
+// *********************
 @mixin if-min-width($width) {
   // Otherwise, output it using a regular media query
   @media screen and (min-width: $width) {
@@ -7,12 +7,7 @@ $fix-mqs: false !default;
   }
 }
 
-@mixin if-max-width($width) {
-  // Otherwise, output it using a regular media query
-  @media (maxn-width: $width) {
-    @content;
-  }
-}
+$fix-mqs: false !default;
 
 @mixin respond-min($width) {
   @if $fix-mqs {
@@ -26,6 +21,10 @@ $fix-mqs: false !default;
   }
 }
 
+
+
+// Image Mixin
+// *********************
 @mixin image-2x($image, $width, $height) {
   @media (min--moz-device-pixel-ratio: 1.3),
   (-o-min-device-pixel-ratio: 2.6/2),

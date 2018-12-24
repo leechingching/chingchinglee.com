@@ -1,4 +1,5 @@
 // Homepage
+// **************
 
 .homepage {
     .home_intro {
@@ -12,11 +13,12 @@
     }
 
     p.bio {
-        @include body_text($lato, 300, 22px, $light-grey);
-        line-height: 32px;
+        @include paragraph_text($tablet, to-max, 22px);
     }
 
     a {
         padding: 0 0.5rem;
     }
 }
+
+// Ened of Homepage
