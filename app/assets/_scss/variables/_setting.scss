@@ -15,6 +15,10 @@ $white: #fff;
 
 $hover-grey: rgba(160, 160, 160, .75);
 
+//Sections 
+
+$section-margin: 2.3em auto;
+
 
 // Mobile 
 .mobile__display {
@@ -24,3 +28,4 @@ $hover-grey: rgba(160, 160, 160, .75);
 .mobile__display--false {
     display: none;
 }
+
