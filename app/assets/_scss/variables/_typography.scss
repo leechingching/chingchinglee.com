@@ -7,7 +7,7 @@
 }
 
 @mixin article_text {
-    @include body_text($lato,normal,19px, $grey);
+    @include body_text($lato, 300,19px, $grey);
 }
 
 @mixin post_title {
@@ -49,4 +49,9 @@
 @mixin h2 {
     @include body_text($lato, 300, 22px, $light-grey);
     text-align: center;
+}
+
+@mixin project-h2 {
+    @include body_text($lato, $fw--3, 25px, $grey);
+    text-transform: capitalize;
 }

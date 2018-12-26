@@ -68,7 +68,7 @@ nav {
         max-width: $desktop;
         width: 100%;
         list-style: none;
-        margin: 2.3em auto;
+        margin: $section-margin;
         padding: 1rem 0;
 
         li {
@@ -76,7 +76,7 @@ nav {
             a {
                 @include body_text($lato, normal, 18px, $grey);
                 @include if-min-width($desktop-large) {
-                    @include body_text($lato, normal, 25px, $grey);
+                    @include body_text($lato, 300, 25px, $grey);
                 }
                 &:hover {
                     color: $hover-grey;
@@ -157,6 +157,7 @@ nav {
             }
         }
     }
+
 // Post Wrapper
 // *********************
 
@@ -179,7 +180,7 @@ nav {
 // *********************
 
 .footer-col-wrapper {
-    margin: 2.3em auto;
+    margin: $section-margin;
     @include flexbox();
     @include flex-direction(column);
     .footer-col {

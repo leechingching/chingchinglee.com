@@ -6,7 +6,9 @@
             {% if page.url == '/' %}
                 <img class="landing_image selfie" alt="{{ site.name }}" src="{{ '/assets/images/selfie.jpg' | prepend: site.baseurl }}" />
                 {% else if page.url =='projects' %}
-                <img class="landing_image project-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_project.jpg' | prepend: site.baseurl }}" />
+                <div class="project_intro">
+                    <h1 class="">{{ page.title }}</h1>
+                </div>
                 {% else if page.url == 'contact' %}
                 <img class="landing_image contact-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_contact.jpg' | prepend: site.baseurl }}" />
             {% endif %}

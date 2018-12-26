@@ -1,16 +1,20 @@
+// Global Page Setting
+// **************
+
+.home_intro {
+    h1 {
+        @include h1();
+    }
+
+    h2{
+        @include h2();
+    }
+}
+
 // Homepage
 // **************
 
 .homepage {
-    .home_intro {
-        h1 {
-            @include h1();
-        }
-
-        h2{
-            @include h2();
-        }
-    }
 
     p.bio {
         @include paragraph_text($tablet, to-max, 22px);
@@ -21,4 +25,89 @@
     }
 }
 
-// Ened of Homepage
+// End of Homepage
+
+
+// Project Layout
+// **************
+.project_intro {
+    background-image: url('/assets/images/grid-paper-bg.jpg');
+    height: 400px;
+    width: 100%;
+    max-width: 1030px;
+    margin: auto;
+    @include flexbox();
+
+    h1 {
+        @include h1();
+        margin: auto;
+        line-height: 400px;
+
+    }
+}
+
+.project-content {
+    margin: calc(2.3em * 2) auto;
+    
+}
+
+.projects {
+
+    h2 {
+        @include project-h2();
+    }
+
+    .grid-lg .project__container {
+        @supports (display: grid) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0 1rem;
+
+            @media screen and (min-width: $tablet) {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @supports not (display: grid) {
+            @include flexbox();
+            @include flex-wrap(wrap);
+        }
+
+        display: flex;
+
+        .projects__project {
+            @supports not (display: grid) {
+                @include flex(2 1 45%);
+                margin: 0 2.5%;
+            }
+
+            @media screen and (min-width: $desktop){
+                &:nth-child(3n) {
+                    @supports (display: grid) {
+                        grid-column: 1/-1;
+                    }
+                }
+            }
+
+            margin-bottom: 2.3em;
+
+            .projects__link {
+                .projects__img {
+                    margin: 0;
+                    padding: 0;
+                    
+                    .featured_img {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+}
+
+// End of Project Layout

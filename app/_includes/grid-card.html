@@ -1,16 +1,16 @@
-<article class="projects__project" itemprop="blogproject" itemscope itemtype="http://schema.org/Blogprojecting">
-   
-  <a class="projects__link" href="{{ project.url | prepend: site.baseurl }}" itemprop="url">
-      {% if project.featured_img %}
-        <figure class="projects__img">
-          <img class="featured_img" src="{{ project.featured_img }}" alt="{{ project.title }}" data-aos="fade-in" itemprop="image"/>
-        </figure>
-      {% endif %}
-      <div>
-        <h2 class="projects__text"><strong itemprop="name">{{ project.title }}</strong></h2>
-        <p>{{ project.subtitle }}</p>
-      </div>
 
-    </a>
-  </article>
+<article class="projects__project" itemprop="blogproject" itemscope itemtype="http://schema.org/Blogprojecting">
+  <a class="projects__link" href="{{ project.url | prepend: site.baseurl }}" itemprop="url">
+    {% if project.featured_img %}
+      <figure class="projects__img">
+        <img class="featured_img" src="{{ project.featured_img }}" alt="{{ project.title }}" data-aos="fade-in" itemprop="image"/>
+      </figure>
+    {% endif %}
+    <div>
+      <h2 class="projects__text"><strong itemprop="name">{{ project.title }}</strong></h2>
+      <p>{{ project.subtitle }}</p>
+    </div>
+
+  </a>
+</article>
   
