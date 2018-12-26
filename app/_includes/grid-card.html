@@ -1,9 +1,9 @@
 <article class="projects__project" itemprop="blogproject" itemscope itemtype="http://schema.org/Blogprojecting">
    
   <a class="projects__link" href="{{ project.url | prepend: site.baseurl }}" itemprop="url">
-      {% if project.image %}
+      {% if project.featured_img %}
         <figure class="projects__img">
-          <img src="{{ project.image }}" alt="{{ project.title }}" data-aos="fade-in" itemprop="image"/>
+          <img class="featured_img" src="{{ project.featured_img }}" alt="{{ project.title }}" data-aos="fade-in" itemprop="image"/>
         </figure>
       {% endif %}
       <div>

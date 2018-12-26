@@ -3,15 +3,14 @@ layout: project
 type: "project"
 title: Adventure of Noodle
 subtitle: A Shopfiy Casestudy
-thumbnail: /assets/images/shopfiy_noodle_thumbnail.jpg
-hero_img: /assets/images/shopfiy_noodle_hero.jpg
+featured_img: /assets/images/featured-icon_shopify.png
 
 description: Ihis is a study of Shopfiy online store. I tried the 14 days free trial and created a online noodle store. From this study, I have a better understand on Shopify CMS and liquid.
 
-url: http://chingchinglee.com/myproject/coalbanks/
+url: https://projects.invisionapp.com/share/TCJ25Q6G4EJ#/screens/296294158_Screenshot-2018-5-9_Noodle_Art
 
-image1: /assets/images/noodle/image1.jpg
-image2: /assets/images/noodle/iamge2.jpg
+image1: /assets/images/02_noodle_01.png
+image2: /assets/images/02_noodle_02.png
 
 software: 
 - Light

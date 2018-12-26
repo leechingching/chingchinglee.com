@@ -2,16 +2,19 @@
 layout: project
 type: "project"
 title: Textbooks of Terrors
-subtitle: An educational app development and design.
-thumbnail: /assets/images/textbooks_of_Terrors_hero.jpg
-hero_img: /assets/images/textbooks_of_Terrors_thumbnail.jpg
+subtitle: An educational app development and design.tot
+featured_img: /assets/images/featured-icon_coalbanks.png
 description: The design and development of educational apps for mobile devices with children in a K-12 classroom. This app is unique because it integrates curricular task recall with an engaging adventure and story. It also gives a unique form of presenting the Coalbanks School to new students, parents, or teachers.
 
 button_name: Demo Video
 url: http://chingchinglee.com/myproject/coalbanks/
 
-image1: /assets/images/tot/image1.jpg
-image2: /assets/images/tot/iamge2.jpg
+image1: /assets/images/01_coby_01.png
+image2: /assets/images/01_coby_02.png
+image3: /assets/images/01_coby_03.jpg
+image4: /assets/images/01_coby_04.jpg
+image5: /assets/images/01_coby_05.jpg
+image6: /assets/images/01_coby_06.jpg
 
 video_title: CTV Lethbridge Interview
 video_url: https://www.youtube.com/watch?v=tmKsrGV5pRw
