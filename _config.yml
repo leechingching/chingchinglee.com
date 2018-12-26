@@ -3,8 +3,7 @@ name: Ching Ching
 title: CCL
 site.external-image: true
 email: contactme@chingchinglee.com
-description: >
-  A girl who loves Web, Cat, Gym, and Mexican food.
+description: "A girl who loves Web, Cat, Gym, and Mexican food."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter: chingchinglcc
