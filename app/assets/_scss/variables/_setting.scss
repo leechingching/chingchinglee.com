@@ -29,3 +29,14 @@ $section-margin: 2.3em auto;
     display: none;
 }
 
+// CTA
+
+@mixin cta-button {
+    @include body_text($lato, $fw--2, 25px, $grey);
+}
+
+// hover 
+
+@mixin hover-effect($color: $light-grey) {
+    color: $color;
+}

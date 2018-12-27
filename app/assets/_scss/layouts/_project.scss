@@ -4,12 +4,149 @@
     line-height: 400px;
 }
 
-.project-detail__gallery {
-    width: 100%;
-    text-align: center;
 
-    img {
-        width: 100%;
-        margin: auto;
+
+
+.project {
+
+    h2 {
+        @include body_text($abril, 700, 32px, $grey);
+    }
+
+
+    p, ul li {
+        @include paragraph_text($tablet, to-max, 18px);
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        padding: 0 0.5rem;
+    }
+
+    .project-wrapper .project-detail {
+
+        div {
+            margin: $section-margin;
+        }
+
+        .project-detail__gallery {
+            width: 100%;
+            text-align: center;
+        
+            img {
+                width: 100%;
+                margin: auto;
+                margin: calc(2.3em / 2) auto;
+            }
+            &:not([class*="grid"]) img:first-child {
+                width: 55%;
+            }
+        }
+    
+       
+    
+        .skills__list {
+            list-style-type: none;
+            padding: 0;
+    
+            li {
+                margin: .2rem 0;
+            }
+        }
+
+        .project-detail__img {
+            @include supports-grid() {
+                @include if-min-width($tablet) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @include not-supports-grid() {
+                @include if-min-width($tablet) {
+                    @include flexbox();
+                    @include flex-wrap(wrap);
+    
+                    img {
+                        flex: 2 1 50%;
+                    }
+                }
+            }
+
+
+            img {
+                width: 100%;
+            }
+        }
+    
+        .project-cta {
+            
+            a {
+                @include cta-button();
+                padding: 0;
+                position: relative;
+    
+    
+                &:hover {
+                    color: $hover-grey;
+    
+                    span {
+                        transform: translateX(5px);
+                        transition: .2s;
+                        color: $hover-grey;
+                    }
+                }
+    
+                span {
+                    position: absolute;
+                    padding-left: 10px;
+                    @include hover-effect();
+                }
+            }
+        }
+
+    }
+
+    .project-quote {
+
+        position: relative;
+        height: 200px;
+        @include flexbox();
+        
+
+        &::before, &::after {
+            content: "\201C";
+            display: block;
+            position: absolute;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+            bottom: -50px;
+        }
+
+        h3 {
+            @include body_text($abril, $fw--3, 32px, $grey);
+            text-align: center;
+            margin: auto;
+
+            @include if-min-width($tablet) {
+                width: 50%;
+            }
+        }
+    }
+
+    .project-content {
+        margin: $section-margin;
     }
 }

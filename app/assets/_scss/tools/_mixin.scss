@@ -152,8 +152,16 @@
 // --------------------------------------------------
 // Support 
 // --------------------------------------------------
-
-
+@mixin supports-grid {
+  @supports (display: grid) {
+    @content;
+  }
+}
+@mixin not-supports-grid {
+  @supports not (display: grid) {
+    @content;
+  }
+}
 
 // --------------------------------------------------
 // box-shadow

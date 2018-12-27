@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-<div class="project">
-
+<div class="project {{ page.class }}">
   <div class="project-wrapper">
      <div class="project-detail">
        <div class="project-detail__text">
@@ -14,14 +13,16 @@ layout: default
         </div>
         <div class="project-detail__skills">
           <h2 class="skills__title project__title">Tools I used to build this project:</h2>
-          {% for skill in page.tag %}
+          
           <ul class="skills__list">
+            {% for skill in page.tag %}
             <li class="skills__list--item">{{ skill }}</li>
+            {% endfor %}
           </ul>
-          {% endfor %}
+          
         </div>
         <div class="project-cta">
-          <a href="{{ page.live_demo }}" alt="{{ page.title }}">Live Demo</a>
+          <a href="{{ page.live_demo }}" alt="{{ page.title }}">Live Demo<span><i class="fas fa-arrow-right"></i></span></a>
         </div>
         {% if page.video %}
           {% if page.extra_image %}
@@ -44,16 +45,23 @@ layout: default
                 {{ video.video_title }}
               </h2>
               <p>{{ page.video_descp }}</p>
-              <span><a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out</a></span>
+              
+              <div class="project-cta">
+                  <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
+                </div>
           </div>
           {% endif %}
         {% endif %}
+     </div>
+
+     <div class="project-quote">
+       <h3>{{ page.learn }}</h3>
      </div>
   </div>
 
 
 
-  <div class="post-content">
+  <div class="project-content">
     {{ content }}
   </div>
 

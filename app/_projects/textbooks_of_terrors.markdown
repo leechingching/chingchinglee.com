@@ -2,11 +2,12 @@
 layout: project
 type: "project"
 title: Textbooks of Terrors
+class: textbooks_of_terrors
 path: textbooks_of_terrors
 subtitle: An educational app development and design.tot
 featured_img: /assets/images/featured-icon_coalbanks.png
 description: The design and development of educational apps for mobile devices with children in a K-12 classroom. This app is unique because it integrates curricular task recall with an engaging adventure and story. It also gives a unique form of presenting the Coalbanks School to new students, parents, or teachers.
-
+learn: Learning how to be a team player and listen to my clients
 button_name: Demo Video
 live_demo: http://chingchinglee.com/myproject/coalbanks/
 
@@ -34,8 +35,4 @@ tag:
 - Prototype
 ---
 
-<!-- The design and development of educational apps for mobile devices with children in a K-12 classroom. 
-
-It was the process that provided a significant learning opportunity for me. From a New Media and Computer Science perspective, I acquired useful experience from working on a real-world problem that requires designing and coding an effective app for children. Also, I was encouraged to be reflective thinkers as I worked in a team, brainstormed ideas, completed needs analysis, developed instructional designs, researched, developed and then created the app. I have a better understanding of how such endeavours can be organised and conducted through this project.
-
-The most important aspect of the experience is field testing the prototype apps with stakeholders like children, teachers, and parents.  I was able to get useful insights and understanding for improvements to the product and insights into the thinking of the target audience.  It raised my awareness in terms of the design and interactivity required.   -->
+Nulla orci massa, hendrerit eget porttitor eu, efficitur et diam. Phasellus aliquet sapien vel libero rhoncus, sed eleifend quam laoreet. Quisque condimentum et odio eu eleifend. Nam egestas semper nulla sed ullamcorper. In molestie eu eros at congue. Sed vitae mi eu dui dignissim blandit. Aliquam mollis laoreet orci sed dapibus. Cras sit amet eros ac diam fringilla tempus sed eu leo. Phasellus luctus ante ligula, ut ultrices nunc euismod nec. Fusce ullamcorper risus non augue mattis rhoncus. Duis dapibus arcu enim, ac bibendum elit blandit quis. Etiam fringilla dolor leo, ac sodales nulla aliquet in. Phasellus facilisis velit facilisis faucibus tristique. Duis cursus massa eu convallis dignissim. 
