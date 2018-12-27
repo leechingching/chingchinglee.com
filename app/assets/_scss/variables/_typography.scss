@@ -34,7 +34,7 @@
 }
 
 @mixin h1 {
-    @include body_text($abril, normal, 6rem, $grey);
+    @include body_text($abril, normal, 4rem, $grey);
     text-transform: capitalize; 
     text-align: center;
     letter-spacing: .3rem;
@@ -42,6 +42,18 @@
 
     @include if-min-width($tablet) {
         font-size: 10rem;
+    }
+}
+
+@mixin collection-item-title {
+    @include body_text($abril, normal, 2rem, $grey);
+    text-transform: capitalize; 
+    text-align: center;
+    letter-spacing: .3rem;
+    margin: 0 auto;
+
+    @include if-min-width($tablet) {
+        font-size: 4rem;
     }
 }
 

@@ -43,6 +43,7 @@ body {
 
 // Header Nav
 // *********************
+
 a {
     color: $grey;
     text-decoration: none;
@@ -85,6 +86,7 @@ nav {
 
             &:first-child a {
                 font-weight: $fw--3;
+                font-family: $abril;
             }
         }
     }
@@ -192,9 +194,11 @@ nav {
             list-style-type: none;
             padding: 0;
             li{
-                width: 3%;
+                width: 8%;
                 margin: auto 1em;
-                
+                @include if-min-width($desktop) {
+                    width: 3%;
+                }
 
                 a svg {
                     width: 100%;
@@ -213,3 +217,4 @@ nav {
         
      }
 }
+

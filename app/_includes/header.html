@@ -5,9 +5,13 @@
         <div class="landing_block">
             {% if page.url == '/' %}
                 <img class="landing_image selfie" alt="{{ site.name }}" src="{{ '/assets/images/selfie.jpg' | prepend: site.baseurl }}" />
-                {% else if page.url =='projects' %}
+                {% else if page.url =='projects'%}
                 <div class="project_intro">
-                    <h1 class="">{{ page.title }}</h1>
+                    {% if page.type == 'project' %}
+                    <h1 class="item--title">{{ page.title }}</h1>
+                    {% else if %}
+                    <h1 class="collection--title">{{ page.title }}</h1>
+                    {% endif %}
                 </div>
                 {% else if page.url == 'contact' %}
                 <img class="landing_image contact-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_contact.jpg' | prepend: site.baseurl }}" />

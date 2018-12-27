@@ -1,0 +1,15 @@
+.item--title {
+    @include collection-item-title();
+    margin: auto;
+    line-height: 400px;
+}
+
+.project-detail__gallery {
+    width: 100%;
+    text-align: center;
+
+    img {
+        width: 100%;
+        margin: auto;
+    }
+}

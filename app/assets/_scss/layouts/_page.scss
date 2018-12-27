@@ -17,7 +17,7 @@
 .homepage {
 
     p.bio {
-        @include paragraph_text($tablet, to-max, 22px);
+        @include paragraph_text($tablet, to-max, 18px);
     }
 
     a {
@@ -31,14 +31,14 @@
 // Project Layout
 // **************
 .project_intro {
+    @include flexbox();
     background-image: url('/assets/images/grid-paper-bg.jpg');
     height: 400px;
     width: 100%;
     max-width: 1030px;
     margin: auto;
-    @include flexbox();
 
-    h1 {
+    h1.collection--title {
         @include h1();
         margin: auto;
         line-height: 400px;
@@ -111,3 +111,35 @@
 }
 
 // End of Project Layout
+
+// Contact Template
+// *********************
+
+.contact--template {
+
+    h2 {
+        @include body_text($abril, 700, 32px, $grey);
+    }
+
+
+    p, ul li {
+        @include paragraph_text($tablet, to-max, 18px);
+    }
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin: .2rem 0;
+        }
+    }
+
+    a {
+        padding: 0 0.5rem;
+    }
+}
