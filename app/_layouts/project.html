@@ -9,6 +9,9 @@ layout: default
        </div>
         <div class="project-detail__gallery">
             <img class="project__image" src="{{ page.image1 }}" alt="{{page.title}}"/>
+            <div class="project-cta">
+              <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
+          </div>
             <img class="project__image" src="{{ page.image2 }}" alt="{{page.title}}"/>
         </div>
         <div class="project-detail__skills">
@@ -45,10 +48,6 @@ layout: default
                 {{ video.video_title }}
               </h2>
               <p>{{ page.video_descp }}</p>
-              
-              <div class="project-cta">
-                  <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
-                </div>
           </div>
           {% endif %}
         {% endif %}

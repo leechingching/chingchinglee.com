@@ -32,7 +32,7 @@ $section-margin: 2.3em auto;
 // CTA
 
 @mixin cta-button {
-    @include body_text($lato, $fw--2, 25px, $grey);
+    @include body_text($lato, $fw--2, 20px, $light-grey);
 }
 
 // hover 

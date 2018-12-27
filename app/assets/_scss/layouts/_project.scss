@@ -1,7 +1,10 @@
 .item--title {
     @include collection-item-title();
+
+    @include if-min-width($tablet) {
+        line-height: 400px;
+    }
     margin: auto;
-    line-height: 400px;
 }
 
 
@@ -111,10 +114,15 @@
     }
 
     .project-quote {
-
+        
+        @include flexbox();
+        @include if-min-width($tablet) {
+            width: 60%;
+            margin: auto;
+        }
         position: relative;
         height: 200px;
-        @include flexbox();
+        
         
 
         &::before, &::after {

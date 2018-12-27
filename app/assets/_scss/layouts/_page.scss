@@ -142,4 +142,45 @@
     a {
         padding: 0 0.5rem;
     }
+   
+    .contact-quote {
+                
+        @include flexbox();
+        @include if-min-width($tablet) {
+            width: 60%;
+            margin: auto;
+        }
+        position: relative;
+        height: 200px;
+        
+        
+
+        &::before, &::after {
+            content: "\201C";
+            display: block;
+            position: absolute;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+            bottom: -50px;
+        }
+
+        h3 {
+            @include body_text($abril, $fw--3, 32px, $grey);
+            text-align: center;
+            margin: auto;
+
+            @include if-min-width($tablet) {
+                width: 60%;
+            }
+        }
+    }
 }
