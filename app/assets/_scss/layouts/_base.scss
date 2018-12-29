@@ -187,8 +187,10 @@ nav {
     margin: $section-margin;
     @include flexbox();
     @include flex-direction(column);
+
     .footer-col {
         @include flexbox();
+
         .social-media-list {
             @include flexbox();
             @include justify-content(center);
@@ -205,6 +207,10 @@ nav {
                 a svg {
                     width: 100%;
                     fill: $light-grey;
+
+                    &:hover {
+                        fill: $hover-grey;
+                    }
                 }
             } 
         }
@@ -215,6 +221,10 @@ nav {
         span a {
             text-decoration: none;
             @include body_text($lato, normal, 22px, $grey);
+
+            &:hover {
+                color: $hover-grey;
+            }
          }
         
      }

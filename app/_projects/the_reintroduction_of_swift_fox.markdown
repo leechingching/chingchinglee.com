@@ -16,11 +16,11 @@ image1: /assets/images/03_fox_01.png
 image2: /assets/images/03_fox_02.png
 
 tag: 
-- HTML, SASS, JS
 - CSS Animation
 - GreenSock
 - Scroll Magic
 - Adobe XD
 - CSS Grid
 ---
-Mauris sapien nibh, euismod eget libero quis, semper maximus ante. Vestibulum eleifend lorem ut lorem hendrerit efficitur. Vestibulum vitae dolor neque. Donec vitae massa sit amet ipsum varius rhoncus. Morbi sollicitudin urna eget enim efficitur hendrerit. Cras sit amet turpis vitae lectus tempor volutpat. Nullam vel porttitor mi. Vivamus nec enim urna. Sed congue tortor metus, non fermentum ante tincidunt id. Aliquam vel vestibulum dolor, nec consequat lacus. Etiam aliquam molestie tortor, in tempor nulla convallis quis. Nulla facilisi. 
+
+The purpose of this website is to educate young children about the environmental issue in AB. 

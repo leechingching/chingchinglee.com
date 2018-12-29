@@ -15,10 +15,10 @@ live_demo: http://chingchingleegridstudy.atwebpages.com/
 image1: /assets/images/05_CSSgrid.png
 
 tag: 
-- HTML, SASS, JS
 - Flexbox
 - JQuery Mobile
 - PhoneGap
 - Adobe XD
 ---
-Vestibulum in ante a mi vestibulum ultricies. Nam viverra at elit non semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed auctor eros quis dictum congue. Maecenas erat magna, consectetur sit amet egestas vitae, molestie nec turpis. Phasellus eleifend est ut velit finibus, a fringilla nunc ullamcorper. Ut a tortor a nisi pulvinar consectetur. Quisque congue in turpis quis elementum. Duis mollis risus ac nibh molestie congue. Aenean molestie libero eros, vitae tincidunt elit ultricies at. Donec eget felis dolor. Sed sodales hendrerit diam sed dictum. Praesent eu massa suscipit, sollicitudin sem eget, blandit ex. Praesent non lacus nec ex varius gravida. Donec et hendrerit lacus. 
+
+I am very interested in CSS and front end development and I wanna be a CSS ninja. CSS Grid will be one of the tool that changes the CSS world and front end industry. Therefore, it is a good idea to learn it as sson as possible.

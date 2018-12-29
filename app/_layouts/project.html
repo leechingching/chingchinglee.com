@@ -12,21 +12,23 @@ layout: default
             <div class="project-cta">
               <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
           </div>
+            {% if page.image2 %}
             <img class="project__image" src="{{ page.image2 }}" alt="{{page.title}}"/>
+            {% endif %}
         </div>
         <div class="project-detail__skills">
           <h2 class="skills__title project__title">Tools I used to build this project:</h2>
           
           <ul class="skills__list">
             {% for skill in page.tag %}
-            <li class="skills__list--item">{{ skill }}</li>
+            <li class="skills__list--item"><span>{{ skill }}</span></li>
             {% endfor %}
           </ul>
           
         </div>
-        <div class="project-cta">
+        <!-- <div class="project-cta">
           <a href="{{ page.live_demo }}" alt="{{ page.title }}">Live Demo<span><i class="fas fa-arrow-right"></i></span></a>
-        </div>
+        </div> -->
         {% if page.video %}
           {% if page.extra_image %}
           <div class="project-detail__img">

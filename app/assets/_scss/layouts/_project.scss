@@ -18,7 +18,7 @@
 
 
     p, ul li {
-        @include paragraph_text($tablet, to-max, 18px);
+        @include paragraph_text($tablet, to-max, 25px);
     }
 
     p {
@@ -45,19 +45,41 @@
                 margin: calc(2.3em / 2) auto;
             }
             &:not([class*="grid"]) img:first-child {
-                width: 55%;
+                @include if-min-width($tablet){
+                    width: 70%;
+                }
             }
         }
     
        
     
         .skills__list {
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-between);
+            @include align-content(center);
+
+            @include if-min-width($tablet) {
+                @include flex-direction(row);
+            }
             list-style-type: none;
             padding: 0;
     
             li {
-                margin: .2rem 0;
+                @include flexbox();
+                @include if-min-width($desktop){
+                    border: 2px solid $hover-grey;
+                    width: 180px;
+                    height: 180px;
+                }
+                text-align: center;
+
+                span {
+                    margin: auto;
+                }
             }
+
+            
         }
 
         .project-detail__img {

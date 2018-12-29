@@ -20,7 +20,6 @@ software:
 - Light
 
 tag: 
-- Front End Skill
 - SASS
 - UI & UX
 - Adoble XD
@@ -28,4 +27,4 @@ tag:
 - Liquid
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nisl sit amet leo dapibus interdum. Nulla a risus non velit iaculis laoreet. Phasellus maximus turpis nec sem cursus interdum. Vivamus nec varius elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ut sollicitudin magna. Vivamus semper diam lacinia pulvinar malesuada. Vivamus orci leo, blandit vitae ultricies eu, efficitur sit amet mi. Sed eget mi molestie, laoreet arcu ut, sollicitudin nisi. Aliquam molestie vestibulum tellus, ut elementum purus pretium et. Sed consequat odio id sapien imperdiet faucibus. Fusce nunc lectus, gravida sed auctor eget, finibus ac dolor. Donec interdum posuere iaculis. Maecenas justo urna, mollis a pretium id, lobortis ac nisi. 
+Making a Shopify website is a new coding experience, and a excellent experience for me to learn and understand Liquid. Liquid is one of my favourite programming language nowadays. This projects pushes me to advance my Front End skill and file organsizing skill. 

@@ -24,7 +24,7 @@ video: true
 video_title: CTV Lethbridge Interview
 video_url: https://www.youtube.com/watch?v=tmKsrGV5pRw
 #video_subtitle: This is our pleasure to be interviewed by the CTV Lethbridge.
-video_descp: What set the direction for us, perhaps unconsciously, was the fact that our school has the bigger list of content on our class’ Weebly site.  It turned out that the kids we were working with were from different classes, not just the teacher were were “paired” to. We thought that if we catered to all topics, we could include their teachers as character, thus making it would be more marketable as a school-wide experience.  We knew we were on the right track when a student suggested later, when we first met the group. Our students came from a number of classrooms and had all been working on different topics. After our first meeting with the students, we decided that we wanted to be able to hit topics across the program of study considering the fact that they had not all had the same material presented to them.
+video_descp: 
 
 software: 
 - Light
@@ -35,4 +35,4 @@ tag:
 - Prototype
 ---
 
-Nulla orci massa, hendrerit eget porttitor eu, efficitur et diam. Phasellus aliquet sapien vel libero rhoncus, sed eleifend quam laoreet. Quisque condimentum et odio eu eleifend. Nam egestas semper nulla sed ullamcorper. In molestie eu eros at congue. Sed vitae mi eu dui dignissim blandit. Aliquam mollis laoreet orci sed dapibus. Cras sit amet eros ac diam fringilla tempus sed eu leo. Phasellus luctus ante ligula, ut ultrices nunc euismod nec. Fusce ullamcorper risus non augue mattis rhoncus. Duis dapibus arcu enim, ac bibendum elit blandit quis. Etiam fringilla dolor leo, ac sodales nulla aliquet in. Phasellus facilisis velit facilisis faucibus tristique. Duis cursus massa eu convallis dignissim. 
+What set the direction for us, perhaps unconsciously, was the fact that our school has the bigger list of content on our class’ Weebly site.  It turned out that the kids we were working with were from different classes, not just the teacher were were “paired” to. We thought that if we catered to all topics, we could include their teachers as character, thus making it would be more marketable as a school-wide experience.  We knew we were on the right track when a student suggested later, when we first met the group. Our students came from a number of classrooms and had all been working on different topics. After our first meeting with the students, we decided that we wanted to be able to hit topics across the program of study considering the fact that they had not all had the same material presented to them.

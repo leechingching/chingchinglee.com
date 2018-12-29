@@ -23,4 +23,5 @@ tag:
 - PhoneGap
 - Adobe XD
 ---
-Vestibulum ultrices, magna ac tristique porta, ante risus consequat libero, dictum pretium augue augue eget lorem. Sed sodales massa eget molestie fringilla. Maecenas vitae nibh fringilla, egestas neque eget, molestie urna. Nam a diam non urna maximus aliquet accumsan quis diam. Maecenas sed mi vitae odio efficitur aliquam in in risus. Donec non metus non nisl congue tempor eget nec diam. Nulla vitae pellentesque orci. Donec vitae aliquet nibh. 
+
+This is one of my favourite student project during my 4 years university life, and it is also my first app I made. I used PhoneGap and JQuery Moible to create this app since I had the fundational knowledge of JavaScript and JQuery. I created all functions and graphic. I spent most of my time making the food icons and making the app template. From this project, I understand my interest that I enjoy doing Front End tasks and making user interface. I am working on the second version of this app that I fetch the local restaurants and render it out. 
