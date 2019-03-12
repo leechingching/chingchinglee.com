@@ -111,6 +111,7 @@ nav ul.list {
 
 
             &:hover {
+                @include easeInFiveSec();
                 color: $hover-grey;
             }
         }
