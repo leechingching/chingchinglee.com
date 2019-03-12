@@ -3,61 +3,61 @@ layout: default
 ---
 <div class="project {{ page.class }}">
   <div class="project-wrapper">
-     <div class="project-detail">
-       <div class="project-detail__text">
-         <p>{{ page.description }}</p>
-       </div>
-        <div class="project-detail__gallery">
-            <img class="project__image" src="{{ page.image1 }}" alt="{{page.title}}"/>
-            <div class="project-cta">
-              <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
-          </div>
-            {% if page.image2 %}
-            <img class="project__image" src="{{ page.image2 }}" alt="{{page.title}}"/>
-            {% endif %}
+    <div class="project-detail">
+      <div class="project-detail__text">
+        <p>{{ page.description }}</p>
+      </div>
+      <div class="project-detail__gallery">
+        <img class="project__image" src="{{ page.image1 }}" alt="{{page.title}}" />
+        <div class="project-cta">
+          <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
         </div>
-        <div class="project-detail__skills">
-          <h2 class="skills__title project__title">Tools I used to build this project:</h2>
-          
-          <ul class="skills__list">
-            {% for skill in page.tag %}
-            <li class="skills__list--item"><span>{{ skill }}</span></li>
-            {% endfor %}
-          </ul>
-          
-        </div>
-        <!-- <div class="project-cta">
+        {% if page.image2 %}
+        <img class="project__image" src="{{ page.image2 }}" alt="{{page.title}}" />
+        {% endif %}
+      </div>
+      <div class="project-detail__skills">
+        <h2 class="skills__title project__title">Tools I used to build this project:</h2>
+
+        <ul class="skills__list">
+          {% for skill in page.tag %}
+          <li class="skills__list--item"><span>{{ skill }}</span></li>
+          {% endfor %}
+        </ul>
+
+      </div>
+      <!-- <div class="project-cta">
           <a href="{{ page.live_demo }}" alt="{{ page.title }}">Live Demo<span><i class="fas fa-arrow-right"></i></span></a>
         </div> -->
-        {% if page.video %}
-          {% if page.extra_image %}
-          <div class="project-detail__img">
-              {% if page.image3 %}
-              <img class="project__image" src="{{ page.image3 }}" alt="{{ page.title }}">
-              {% endif %}
-              {% if page.image4 %}
-              <img class="project__image" src="{{ page.image4 }}" alt="{{ page.title }}">
-              {% endif %}
-              {% if page.image5 %}
-              <img class="project__image" src="{{ page.image5 }}" alt="{{ page.title }}">
-              {% endif %}
-              {% if page.image6 %}
-              <img class="project__image" src="{{ page.image6 }}" alt="{{ page.title }}">
-              {% endif %}
-          </div>
-          <div class="project-detail__video">
-              <h2 class="project__title">
-                {{ video.video_title }}
-              </h2>
-              <p>{{ page.video_descp }}</p>
-          </div>
-          {% endif %}
+      {% if page.video %}
+      {% if page.extra_image %}
+      <div class="project-detail__img">
+        {% if page.image3 %}
+        <img class="project__image" src="{{ page.image3 }}" alt="{{ page.title }}">
         {% endif %}
-     </div>
+        {% if page.image4 %}
+        <img class="project__image" src="{{ page.image4 }}" alt="{{ page.title }}">
+        {% endif %}
+        {% if page.image5 %}
+        <img class="project__image" src="{{ page.image5 }}" alt="{{ page.title }}">
+        {% endif %}
+        {% if page.image6 %}
+        <img class="project__image" src="{{ page.image6 }}" alt="{{ page.title }}">
+        {% endif %}
+      </div>
+      <div class="project-detail__video">
+        <h2 class="project__title">
+          {{ video.video_title }}
+        </h2>
+        <p>{{ page.video_descp }}</p>
+      </div>
+      {% endif %}
+      {% endif %}
+    </div>
 
-     <div class="project-quote">
-       <h3>{{ page.learn }}</h3>
-     </div>
+    <div class="project-quote">
+      <h3>{{ page.learn }}</h3>
+    </div>
   </div>
 
 

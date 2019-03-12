@@ -7,7 +7,7 @@ description: "A girl who loves Web, Cat, Gym, and Mexican food."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter: chingchinglcc
-github:  chingchinglcc
+github: chingchinglcc
 instagram: ching2lcc
 
 paginate: 5
@@ -25,8 +25,8 @@ plugins:
   - jekyll-sitemap
 
 sass:
-    - sass_dir: _sass
-    - style: compressed
+  - sass_dir: _sass
+  - style: compressed
 
 # Contact settings
 # contact_img: /assets/images/placeholder-28.jpg
@@ -37,15 +37,14 @@ about: true
 projects: true
 
 docs:
-- title: CHING CHING
-  url: /
+  - title: CHING CHING
+    url: /
 
-- title: Projects
-  url: /projects
+  - title: Projects
+    url: /projects/
 
-- title: Contact
-  url: /contact
-
+  - title: Contact
+    url: /contact
 
 # Collections
 collections:
@@ -68,4 +67,3 @@ exclude:
   - gulpfile.js
   - package.json
   - README.md
-
