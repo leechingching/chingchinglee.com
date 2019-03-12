@@ -57,31 +57,19 @@
 
 
         .skills__list {
-            @include flexbox();
-            @include flex-direction(column);
-            @include justify-content(space-between);
-            @include align-content(center);
-
-            @include if-min-width($tablet) {
-                @include flex-direction(row);
-            }
-
             list-style-type: none;
             padding: 0;
 
+            @media (min-width: $desktop) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
             li {
-                @include flexbox();
 
-                @include if-min-width($desktop) {
-                    border: 2px solid $hover-grey;
-                    width: 180px;
-                    height: 150px;
-                }
-
-                text-align: center;
-
-                span {
-                    margin: auto;
+                span i {
+                    color: $pink;
+                    margin-right: 10px;
                 }
             }
 
@@ -116,26 +104,25 @@
         .project-cta {
 
             a {
-                @include cta-button();
                 padding: 0;
                 position: relative;
-                //color: $pink;
+                color: $baby-pink;
 
 
                 &:hover {
                     color: $hover-grey;
 
                     span {
-                        transform: translateX(5px);
+                        padding: 15px;
                         transition: .2s;
                         color: $hover-grey;
                     }
                 }
 
                 span {
-                    position: absolute;
-                    padding-left: 10px;
                     @include hover-effect();
+                    padding-left: 10px;
+                    color: $baby-pink;
                 }
             }
         }

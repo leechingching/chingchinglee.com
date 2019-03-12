@@ -1,7 +1,7 @@
 ---
 layout: project
 type: "project"
-title: Adventure of Noodle
+title: Projects - Adventure of Noodle
 class: adventure_of_noodle
 path: adventure_of_noodle
 subtitle: A Shopfiy Casestudy
@@ -16,15 +16,15 @@ live_demo: https://projects.invisionapp.com/share/TCJ25Q6G4EJ#/screens/296294158
 image1: /assets/images/02_noodle_01.png
 image2: /assets/images/02_noodle_02.png
 
-software: 
-- Light
+software:
+  - Light
 
-tag: 
-- SASS
-- UI & UX
-- Adoble XD
-- Shopfiy 
-- Liquid
+tag:
+  - SASS
+  - UI & UX
+  - Adoble XD
+  - Shopfiy
+  - Liquid
 ---
 
-Making a Shopify website is a new coding experience, and a excellent experience for me to learn and understand Liquid. Liquid is one of my favourite programming language nowadays. This projects pushes me to advance my Front End skill and file organsizing skill. 
+Making a Shopify website is a new coding experience, and a excellent experience for me to learn and understand Liquid. Liquid is one of my favourite programming language nowadays. This projects pushes me to advance my Front End skill and file organsizing skill.

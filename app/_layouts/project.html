@@ -1,14 +1,12 @@
 ---
 layout: default
+
 ---
 <div class="project {{ page.class }}">
   <div class="project-wrapper">
     <div class="project-detail">
-      <div class="project-detail__text">
-        <p>{{ page.description }}<a href="{{ page.live_demo }}" alt="{{ page.title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a></p>
-        <!-- <div class="project-cta">
-          
-        </div> -->
+      <div class="project-detail__text project-cta">
+        <p>{{ page.description }}<a href="{{ page.live_demo }}" alt="{{ page.title }}"> Click It Out<span><i class="fas fa-arrow-right"></i></span></a></p>
       </div>
       <div class="project-detail__gallery">
         <img class="project__image" src="{{ page.image1 }}" alt="{{page.title}}" />
@@ -21,7 +19,7 @@ layout: default
 
         <ul class="skills__list">
           {% for skill in page.tag %}
-          <li class="skills__list--item"><span>{{ skill }}</span></li>
+          <li class="skills__list--item"><span class="skill--icon"><i class="fas fa-asterisk"></i>{{ skill }}</span></li>
           {% endfor %}
         </ul>
 

@@ -1,7 +1,7 @@
 ---
 layout: project
 type: "project"
-title: Lethbridge Food Guide
+title: Projects - Lethbridge Food Guide
 class: lethbridge_food_guide
 path: lethbridge_food_guide
 subtitle: Don't where to eat in Lethbridge tonight? Explore the restaurant in Lethbrigde.

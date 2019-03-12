@@ -1,9 +1,9 @@
 ---
 layout: project
 type: "project"
-title: Swift Fox Animation
+title: Projects - Swift Fox Animation
 class: swift_fox
-path:  the_reintroduction_of_swift_fox
+path: the_reintroduction_of_swift_fox
 subtitle: CSS Animation and GreenSock Project
 featured_img: /assets/images/featured-icon_gsap.png
 
@@ -15,12 +15,12 @@ live_demo: http://chingchingleefox.atwebpages.com/
 image1: /assets/images/03_fox_01.png
 image2: /assets/images/03_fox_02.png
 
-tag: 
-- CSS Animation
-- GreenSock
-- Scroll Magic
-- Adobe XD
-- CSS Grid
+tag:
+  - CSS Animation
+  - GreenSock
+  - Scroll Magic
+  - Adobe XD
+  - CSS Grid
 ---
 
-The purpose of this website is to educate young children about the environmental issue in AB. 
+The purpose of this website is to educate young children about the environmental issue in AB.
