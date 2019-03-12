@@ -135,6 +135,13 @@
 
 .contact--template {
 
+    li.skill {
+        span {
+            padding-right: 10px;
+            margin: auto;
+        }
+    }
+
     h2 {
         @include body_text($abril, 700, 32px, $grey);
     }
@@ -155,6 +162,7 @@
 
         li {
             margin: .2rem 0;
+
         }
     }
 
@@ -168,7 +176,10 @@
         }
     }
 
-    .contact_services {
+    .contact_top {
+
+        @include flexbox();
+        @include flex-direction(column);
 
         h2 {
             @media (max-width: $tablet) {
@@ -176,74 +187,82 @@
             }
         }
 
-        ul {
-            @include flexbox();
-            @include flex-direction(column);
-            @include justify-content(space-between);
-            @include align-content(center);
+        .contact_services {
 
-            @include if-min-width($tablet) {
-                @include flex-direction(row);
+            ul {
+
+                @media(min-width: $desktop) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                li {
+                    span {
+                        color: $pink;
+                    }
+                }
+            }
+        }
+
+        @include if-min-width($desktop) {
+            @include flex-direction(row);
+
+            .contact_interest {
+                width: 35%;
             }
 
-            li {
-                @include flexbox();
-
-                @include if-min-width($desktop) {
-                    border: 2px solid $hover-grey;
-                    width: 220px;
-                    height: 220px;
-                }
-
-                text-align: center;
-
-                span {
-                    margin: auto;
-                }
+            .contact_services {
+                @include flex(2 1 65%);
             }
         }
     }
 
-    .contact-quote {
-
-        @include flexbox();
-
-        @include if-min-width($desktop) {
-            width: 60%;
-            margin: $section-margin;
-        }
-
-        position: relative;
-        height: 200px;
 
 
-        &::before,
-        &::after {
-            content: "\201C";
-            display: block;
-            position: absolute;
-            font-size: 60px;
-            font-weight: bold;
-        }
+    // .contact-quote {
 
-        &::before {
-            top: 0;
-            left: 0;
-        }
+    //     @include flexbox();
 
-        &::after {
-            right: 0;
-            bottom: -50px;
-        }
+    //     @include if-min-width($desktop) {
+    //         width: 60%;
+    //         margin: $section-margin;
+    //     }
 
-        h3 {
-            @include body_text($abril, $fw--3, 32px, $grey);
-            text-align: center;
-            margin: auto;
+    //     position: relative;
+    //     height: 200px;
 
-            @include if-min-width($tablet) {
-                width: 60%;
-            }
-        }
+
+    //     &::before,
+    //     &::after {
+    //         content: "\201C";
+    //         display: block;
+    //         position: absolute;
+    //         font-size: 60px;
+    //         font-weight: bold;
+    //     }
+
+    //     &::before {
+    //         top: 0;
+    //         left: 0;
+    //     }
+
+    //     &::after {
+    //         right: 0;
+    //         bottom: -50px;
+    //     }
+
+    //     h3 {
+    //         @include body_text($abril, $fw--3, 32px, $grey);
+    //         text-align: center;
+    //         margin: auto;
+
+    //         @include if-min-width($tablet) {
+    //             width: 60%;
+    //         }
+    //     }
+    // }
+
+    .contact_intro {
+        margin-top: 2.3em;
     }
 }

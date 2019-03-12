@@ -228,16 +228,6 @@
   width: 100%;
 }
 
-@mixin hover_effect() {
-  @include easeInFiveSec();
-  content: "";
-  // bottom: -10px;
-  // left: 0;
-  // position: absolute;
-  // border-bottom: 4px solid $pink;
-  opacity: 1;
-  transform: scale(1.05, 1);
-}
 
 @mixin hover_animation {
   @include easeInFiveSec();
