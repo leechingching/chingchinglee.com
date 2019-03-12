@@ -91,6 +91,25 @@ nav ul.list {
                 @include body_text($lato, 300, 25px, $grey);
             }
 
+            &:not(.activeNav) {
+                &::after {
+                    @include easeInFiveSec();
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    border-bottom: 4px solid $pink;
+                    width: 1px;
+                    opacity: 0;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                    width: 100%;
+                }
+            }
+
+
             &:hover {
                 color: $hover-grey;
             }
@@ -105,8 +124,14 @@ nav ul.list {
     }
 }
 
-.activeNav::after {
-    @include active_class();
+.activeNav {
+    &:hover::after {
+        @include active_class_animation();
+    }
+
+    &::after {
+        @include active_class();
+    }
 }
 
 

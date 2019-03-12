@@ -40,3 +40,8 @@ $section-margin: 2.3em auto;
 @mixin hover-effect($color: $light-grey) {
     color: $color;
 }
+
+// trasition
+@mixin easeInFiveSec() {
+    transition: .5s all ease;
+}
