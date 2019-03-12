@@ -6,7 +6,7 @@
         @include h1();
     }
 
-    h2{
+    h2 {
         @include h2();
     }
 }
@@ -48,7 +48,7 @@
 
 .project-content {
     margin: calc(2.3em * 2) auto;
-    
+
 }
 
 .projects {
@@ -62,10 +62,6 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 0 1rem;
-
-            @media screen and (min-width: $tablet) {
-                grid-template-columns: 1fr 1fr;
-            }
         }
 
         @supports not (display: grid) {
@@ -81,13 +77,14 @@
                 margin: 0 2.5%;
             }
 
-            @media screen and (min-width: $desktop){
+            @media screen and (min-width: $desktop) {
                 &:nth-child(3n) {
                     @supports (display: grid) {
                         grid-column: 1/-1;
                     }
                 }
             }
+
             margin-bottom: 2.3em;
 
 
@@ -95,7 +92,7 @@
                 .projects__img {
                     margin: 0;
                     padding: 0;
-                    
+
                     .featured_img {
                         width: 100%;
                         margin: 0;
@@ -104,7 +101,7 @@
                 }
 
                 &:hover {
-                    div > * {
+                    div>* {
                         color: $hover-grey;
                     }
                 }
@@ -121,6 +118,16 @@
 
 }
 
+.projects {
+    @media screen and (min-width: $tablet) {
+        .grid-lg .project__container {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+
+}
+
 // End of Project Layout
 
 // Contact Template
@@ -128,12 +135,20 @@
 
 .contact--template {
 
+    li.skill {
+        span {
+            padding-right: 10px;
+            margin: auto;
+        }
+    }
+
     h2 {
         @include body_text($abril, 700, 32px, $grey);
     }
 
 
-    p, ul li {
+    p,
+    ul li {
         @include paragraph_text($tablet, to-max, 25px);
     }
 
@@ -147,6 +162,7 @@
 
         li {
             margin: .2rem 0;
+
         }
     }
 
@@ -159,8 +175,11 @@
             color: $hover-grey;
         }
     }
-   
-    .contact_services {
+
+    .contact_top {
+
+        @include flexbox();
+        @include flex-direction(column);
 
         h2 {
             @media (max-width: $tablet) {
@@ -168,70 +187,82 @@
             }
         }
 
-        ul {
-            @include flexbox();
-            @include flex-direction(column);
-            @include justify-content(space-between);
-            @include align-content(center);
+        .contact_services {
 
-            @include if-min-width($tablet) {
-                @include flex-direction(row);
+            ul {
+
+                @media(min-width: $desktop) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                li {
+                    span {
+                        color: $pink;
+                    }
+                }
+            }
+        }
+
+        @include if-min-width($desktop) {
+            @include flex-direction(row);
+
+            .contact_interest {
+                width: 35%;
             }
 
-            li {
-                @include flexbox();
-                @include if-min-width($desktop){
-                    border: 2px solid $hover-grey;
-                    width: 220px;
-                    height: 220px;
-                }
-                text-align: center;
-
-                span {
-                    margin: auto;
-                }
+            .contact_services {
+                @include flex(2 1 65%);
             }
         }
     }
 
-    .contact-quote {
-                
-        @include flexbox();
-        @include if-min-width($desktop) {
-            width: 60%;
-            margin: $section-margin;
-        }
 
-        position: relative;
-        height: 200px;
-        
 
-        &::before, &::after {
-            content: "\201C";
-            display: block;
-            position: absolute;
-            font-size: 60px;
-            font-weight: bold;
-        }
-        
-        &::before {
-            top: 0;
-            left: 0;
-        }
+    // .contact-quote {
 
-        &::after {
-            right: 0;
-            bottom: -50px;
-        }
+    //     @include flexbox();
 
-        h3 {
-            @include body_text($abril, $fw--3, 32px, $grey);
-            text-align: center;
-            margin: auto;
+    //     @include if-min-width($desktop) {
+    //         width: 60%;
+    //         margin: $section-margin;
+    //     }
 
-            @include if-min-width($tablet) {
-                width: 60%;
-            }
-        }
+    //     position: relative;
+    //     height: 200px;
+
+
+    //     &::before,
+    //     &::after {
+    //         content: "\201C";
+    //         display: block;
+    //         position: absolute;
+    //         font-size: 60px;
+    //         font-weight: bold;
+    //     }
+
+    //     &::before {
+    //         top: 0;
+    //         left: 0;
+    //     }
+
+    //     &::after {
+    //         right: 0;
+    //         bottom: -50px;
+    //     }
+
+    //     h3 {
+    //         @include body_text($abril, $fw--3, 32px, $grey);
+    //         text-align: center;
+    //         margin: auto;
+
+    //         @include if-min-width($tablet) {
+    //             width: 60%;
+    //         }
+    //     }
+    // }
+
+    .contact_intro {
+        margin-top: 2.3em;
     }
 }

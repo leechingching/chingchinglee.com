@@ -1,23 +1,27 @@
+<header class="header-home headere-wrapper">
+    {% include hamburger.html %}
+    {% include nav.html %}
+    <div class="landing_block">
+        {% if page.url == '/' %}
 
-    <header class="header-home headere-wrapper">
-        {% include hamburger.html %}
-        {% include nav.html %}
-        <div class="landing_block">
-            {% if page.url == '/' %}
-                <img class="landing_image selfie" alt="{{ site.name }}" src="{{ '/assets/images/selfie.jpg' | prepend: site.baseurl }}" />
-                {% else if page.url =='projects'%}
-                <div class="project_intro">
-                    {% if page.type == 'project' %}
-                    <h1 class="item--title">{{ page.title }}</h1>
-                    {% else if %}
-                    <h1 class="collection--title">{{ page.title }}</h1>
-                    {% endif %}
-                </div>
-                {% else if page.url == 'contact' %}
-                <img class="landing_image contact-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_contact.jpg' | prepend: site.baseurl }}" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="{{ '/assets/images/profile-picture-480w.jpg' | prepend: site.baseurl }}">
+            <source media="(min-width: 800px) and (max-width: 1031px)" srcset="{{ '/assets/images/profile-picture-800w.jpg' | prepend: site.baseurl }}">
+            <source media="(min-width: 1032px)" srcset="{{ '/assets/images/profile-picture-1030w.jpg' | prepend: site.baseurl }}">
+            <img src="profile-picture" alt="Ching Ching Profile Picture">
+        </picture>
+
+        <!-- <img class="landing_image selfie" alt="{{ site.name }}" src="" /> -->
+        {% else if page.url =='projects'%}
+        <div class="project_intro">
+            {% if page.type == 'project' %}
+            <h1 class="item--title">{{ page.title }}</h1>
+            {% else if %}
+            <h1 class="collection--title">{{ page.title }}</h1>
             {% endif %}
         </div>
-    </header>
-
-
-
+        {% else if page.url == 'contact' %}
+        <img class="landing_image contact-img" alt="{{ page.title }}" src="{{ '/assets/images/landing_contact.jpg' | prepend: site.baseurl }}" />
+        {% endif %}
+    </div>
+</header>

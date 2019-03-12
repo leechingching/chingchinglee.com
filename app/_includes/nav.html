@@ -1,7 +1,8 @@
 <nav>
     <ul class="list">
         {% for item in site.docs %}
-            <li class=""><a href="{{ item.url }}">{{ item.title }}</a></li>
+        <li><a class="{% if page.title contains item.title %} activeNav {% endif %}" href="{{ item.url }}">{{
+                item.title }}</a></li>
         {% endfor %}
     </ul>
 </nav>

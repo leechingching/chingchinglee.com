@@ -1,7 +1,7 @@
 ---
 layout: project
 type: "project"
-title: Textbooks of Terrors
+title: Projects - Textbooks of Terrors
 class: textbooks_of_terrors
 path: textbooks_of_terrors
 subtitle: An educational app development and design.tot
@@ -24,15 +24,15 @@ video: true
 video_title: CTV Lethbridge Interview
 video_url: https://www.youtube.com/watch?v=tmKsrGV5pRw
 #video_subtitle: This is our pleasure to be interviewed by the CTV Lethbridge.
-video_descp: 
+video_descp:
 
-software: 
-- Light
+software:
+  - Light
 
-tag: 
-- app
-- UI & UX
-- Prototype
+tag:
+  - app
+  - UI & UX
+  - Prototype
 ---
 
-What set the direction for us, perhaps unconsciously, was the fact that our school has the bigger list of content on our class’ Weebly site.  It turned out that the kids we were working with were from different classes, not just the teacher were were “paired” to. We thought that if we catered to all topics, we could include their teachers as character, thus making it would be more marketable as a school-wide experience.  We knew we were on the right track when a student suggested later, when we first met the group. Our students came from a number of classrooms and had all been working on different topics. After our first meeting with the students, we decided that we wanted to be able to hit topics across the program of study considering the fact that they had not all had the same material presented to them.
+What set the direction for us, perhaps unconsciously, was the fact that our school has the bigger list of content on our class’ Weebly site. It turned out that the kids we were working with were from different classes, not just the teacher were were “paired” to. We thought that if we catered to all topics, we could include their teachers as character, thus making it would be more marketable as a school-wide experience. We knew we were on the right track when a student suggested later, when we first met the group. Our students came from a number of classrooms and had all been working on different topics. After our first meeting with the students, we decided that we wanted to be able to hit topics across the program of study considering the fact that they had not all had the same material presented to them.

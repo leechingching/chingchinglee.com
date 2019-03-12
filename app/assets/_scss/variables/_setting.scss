@@ -1,8 +1,8 @@
-
-
 // Font
-$abril: 'Abril Fatface', cursive;
-$lato: 'Lato', sans-serif;
+$abril: 'Abril Fatface',
+cursive;
+$lato: 'Lato',
+sans-serif;
 
 $fw--1: 300;
 $fw--2: 400;
@@ -12,7 +12,8 @@ $fw--3: 700;
 $grey: #131516;
 $light-grey: #707C80;
 $white: #fff;
-
+$pink: #cc2a2a;
+$baby-pink:#e38181;
 $hover-grey: rgba(160, 160, 160, .75);
 
 //Sections 
@@ -39,4 +40,9 @@ $section-margin: 2.3em auto;
 
 @mixin hover-effect($color: $light-grey) {
     color: $color;
+}
+
+// trasition
+@mixin easeInFiveSec() {
+    transition: .5s all ease;
 }
