@@ -9,10 +9,17 @@
     h2 {
         @include h2();
     }
+
 }
 
 // Homepage
 // **************
+
+.profile-picture {
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
 
 .homepage {
 
