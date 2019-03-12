@@ -5,13 +5,13 @@ layout: default
   <div class="project-wrapper">
     <div class="project-detail">
       <div class="project-detail__text">
-        <p>{{ page.description }}</p>
+        <p>{{ page.description }}<a href="{{ page.live_demo }}" alt="{{ page.title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a></p>
+        <!-- <div class="project-cta">
+          
+        </div> -->
       </div>
       <div class="project-detail__gallery">
         <img class="project__image" src="{{ page.image1 }}" alt="{{page.title}}" />
-        <div class="project-cta">
-          <a href="{{ page.video_url }}" alt="{{ page.video_title }}">Click It Out<span><i class="fas fa-arrow-right"></i></span></a>
-        </div>
         {% if page.image2 %}
         <img class="project__image" src="{{ page.image2 }}" alt="{{page.title}}" />
         {% endif %}
