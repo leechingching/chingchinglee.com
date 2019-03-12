@@ -5,7 +5,7 @@ site.external-image: true
 email: contactme@chingchinglee.com
 description: "A girl who loves Web, Cat, Gym, and Mexican food."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://leechingching.github.io/chingchinglee.com/ # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter: chingchinglcc
 github: chingchinglcc
 instagram: ching2lcc
@@ -23,10 +23,6 @@ destination: ./build
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-sass:
-  - sass_dir: _sass
-  - style: compressed
 
 # Contact settings
 # contact_img: /assets/images/placeholder-28.jpg
