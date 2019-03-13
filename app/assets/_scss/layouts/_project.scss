@@ -2,7 +2,7 @@
     @include collection-item-title();
 
     @include if-min-width($tablet) {
-        line-height: 400px;
+        // line-height: 400px;
     }
 
     margin: auto;

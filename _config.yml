@@ -5,10 +5,15 @@ site.external-image: true
 email: contactme@chingchinglee.com
 description: "A girl who loves Web, Cat, Gym, and Mexican food."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://leechingching.github.io/chingchinglee.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter: chingchinglcc
 github: chingchinglcc
 instagram: ching2lcc
+
+ftp_host: "mtl-node8.websitehostserver.net"
+ftp_username: "chingchi"
+ftp_dir: "/public_html/jekyll"
+ftp_passive: false
 
 paginate: 5
 paginate_path: "/page/:num"
@@ -37,7 +42,7 @@ docs:
     url: /
 
   - title: Projects
-    url: /projects/
+    url: /projects
 
   - title: Contact
     url: /contact
@@ -46,7 +51,7 @@ docs:
 collections:
   projects:
     output: true
-    permalink: /projects/:title
+    # permalink: /projects/:title
 
 # Defaults
 defaults:

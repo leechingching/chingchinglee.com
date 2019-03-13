@@ -11,7 +11,7 @@ description: This is a signle page web page using React. Why using React to crea
 
 learn: React is a cool framework. It is eating the front end world!
 
-live_demo: https://github.com/chingchinglcc/react-lethbridge-food
+live_demo: https://github.com/leechingching/leth-food-master
 
 image1: /assets/images/01_rice.png
 
