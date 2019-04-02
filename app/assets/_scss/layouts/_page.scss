@@ -64,6 +64,38 @@
         @include project-h2();
     }
 
+    p.bio {
+        @include paragraph_text($tablet, to-max, 18px);
+
+    }
+
+    .project__clients {
+
+        .project__clients--grid {
+            ul {
+                padding: 0;
+
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(space-between);
+
+                @include if-min-width($desktop) {
+                    @include flex-direction(row);
+                }
+
+                li {
+                    list-style-type: none;
+                    text-align: center;
+
+                    img {
+                        width: calc(100% / 3);
+                    }
+                }
+            }
+        }
+    }
+
+
     .grid-lg .project__container {
         @supports (display: grid) {
             display: grid;

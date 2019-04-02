@@ -1,16 +1,38 @@
 ---
 layout: projects
 title: Projects
-permalink: /projects/
 ---
 
 <div class="projects">
     <div class="grid-lg">
+        <div class="project__clients">
+            <p class="bio">I've had opportunity to collabrate with a variety of local companies and digital marketing
+                agency.
+                Because of contract and client agreement,
+                I cannot showcase the projects publicly. If you'd like to further explore my skills, experience, and
+                projects, please feel free to get in touch.
+            </p>
+            <div class="project__clients--grid">
+                <ul>
+                    <li class="grid_item">
+                        <img src="/assets/images/husky.png" alt="husky">
+                    </li>
+                    <li class="grid_item">
+                        <img src="/assets/images/husky.png" alt="SnapPads">
+                    </li>
+                    <li class="grid_item">
+                        <img src="/assets/images/husky.png" alt="Enchanted Design Ltd">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project__opening">
+            <p class="bio">There are a few projects that I personal love it a lot!</p>
+        </div>
         <div class="project__container">
             {% for project in site.projects %}
-                {% include grid-card.html %}
+            {% include grid-card.html %}
             {% endfor %}
         </div>
     </div>
 </div>
-
