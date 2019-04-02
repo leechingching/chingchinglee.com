@@ -4,12 +4,13 @@ title: CCL
 site.external-image: true
 email: contactme@chingchinglee.com
 description: "A girl who loves Web, Cat, Gym, and Mexican food."
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+baseurl: ""
+url: ""
 twitter: chingchinglcc
 github: chingchinglcc
 instagram: ching2lcc
 
+#glynn to deploy
 ftp_host: "mtl-node8.websitehostserver.net"
 ftp_username: "chingchi"
 ftp_dir: "/public_html/jekyll"

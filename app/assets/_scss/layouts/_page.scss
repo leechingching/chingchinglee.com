@@ -28,7 +28,7 @@
     }
 
     a {
-        padding: 0 0.5rem;
+        padding-right: .25rem;
     }
 }
 
@@ -76,11 +76,12 @@
                 padding: 0;
 
                 @include flexbox();
-                @include flex-direction(column);
-                @include justify-content(space-between);
+                @include flex-wrap(wrap);
+                // @include flex-direction(column);
+                @include justify-content(center);
 
                 @include if-min-width($desktop) {
-                    @include flex-direction(row);
+                    @include justify-content(space-around);
                 }
 
                 li {
@@ -88,7 +89,7 @@
                     text-align: center;
 
                     img {
-                        width: calc(100% / 3);
+                        width: 100%;
                     }
                 }
             }
